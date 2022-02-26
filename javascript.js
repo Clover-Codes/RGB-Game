@@ -69,7 +69,6 @@ function startGame() {
     }
 
     round = rgbArr(mode);
-    console.table(round);
 
     chosen = round[Math.floor(Math.random()*n)];
 
