@@ -67,17 +67,20 @@ h2 {
 }
 
 .row {
-    height: 40%;
+    height: 25vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10px 0;
 }
 
 .color {
-    height: 140px;
-    width: 170px;
-    border-radius: 10px;
+    height: min(25vh, 30vw);
+    max-height: 160px;
+    width: min(25vh, 30vw);
+    max-width: 160px;
+    border-radius: 20px;
     background: grey;
     margin: 0px 10px;
     position: relative;
@@ -95,3 +98,16 @@ h2 {
 
 
 /* add a shine to these boxes later */
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 0.9em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .color {
+        margin: 0 3px;
+        /* border-radius: 20px; */
+    }
+  }
